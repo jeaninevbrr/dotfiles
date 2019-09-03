@@ -136,7 +136,7 @@ FPUR="\[\033[01;34m\]" # foreground purple
 FGRE="\[\033[01;32m\]"
 FCYN="\[\033[36m\]"
 
-export PROMPT_COMMAND='__git_ps1 "[$FPUR\w$RS]" "\n$FGRE\u@\h$RS $FPUR\$$RS "'
+export PROMPT_COMMAND='__git_ps1 "[$FPUR\w$RS][$FPUR\A$RS]" "\n$FGRE\u@\h$RS $FPUR\$$RS "'
 
 # load perl modules installed in home folder
 export PERL5LIB=~/share/perl/5.14.2/
