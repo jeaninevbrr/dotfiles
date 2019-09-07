@@ -10,6 +10,7 @@ source ~/.dotfiles/install-qtcreator.sh
 source ~/.dotfiles/install-sublime.sh
 source ~/.dotfiles/install-terminator.sh
 source ~/.dotfiles/install-vim.sh
+source ~/.dotfiles/install-google-chrome.sh
 
 mkdir -vp ~/bin
 mkdir -vp ~/.config/git
