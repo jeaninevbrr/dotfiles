@@ -158,3 +158,4 @@ then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+source ~/.ros-env/setup.bash
