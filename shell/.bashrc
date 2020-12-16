@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -80,7 +80,7 @@ if [ -x /usr/bin/dircolors ]; then
     #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
+    alias FG_USERp='FG_USERp --color=auto'
     alias egrep='egrep --color=auto'
 fi
 
@@ -131,12 +131,12 @@ export GIT_PS1_SHOWUPSTREAM=auto
 
 export GIT_PS1_SHOWCOLORHINTS=1
 
-RS="\[\033[0m\]"    # reset
-FPUR="\[\033[01;34m\]" # foreground purple
-FGRE="\[\033[01;32m\]"
-FCYN="\[\033[36m\]"
+RS="\[\e[0m\]"
+FG_BRACKETS="\[\e[0m\]"
+FG_PATH="\[\e[34m\]"
+FG_DOLLAR="\[\e[1m\]"
 
-export PROMPT_COMMAND='__git_ps1 "[$FPUR\w$RS][$FPUR\A$RS]" "\n$FGRE\u@\h$RS $FPUR\$$RS "'
+export PROMPT_COMMAND='__git_ps1 "$FG_BRACKETS[$RS$FG_PATH\W$RS$FG_BRACKETS]" "\n$FG_DOLLAR\$$RS "'
 
 # load perl modules installed in home folder
 export PERL5LIB=~/share/perl/5.14.2/
@@ -157,5 +157,7 @@ then
     export PATH=/usr/lib/ccache:$PATH
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-source ~/.ros-env/setup.bash
+source /usr/share/doc/fzf/examples/key-bindings.bash
+
+# set PATH so it includes user's private bin directories
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
