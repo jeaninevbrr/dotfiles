@@ -136,7 +136,7 @@ FG_BRACKETS="\[\e[0m\]"
 FG_PATH="\[\e[34m\]"
 FG_DOLLAR="\[\e[1m\]"
 
-export PROMPT_COMMAND='__git_ps1 "$FG_BRACKETS[$RS$FG_PATH\W$RS$FG_BRACKETS]" "\n$FG_DOLLAR\$$RS "'
+export PROMPT_COMMAND='__git_ps1 "$FG_BRACKETS[$RS$FG_PATH\w$RS$FG_BRACKETS]" "\n$FG_DOLLAR\$$RS "'
 
 # load perl modules installed in home folder
 export PERL5LIB=~/share/perl/5.14.2/
