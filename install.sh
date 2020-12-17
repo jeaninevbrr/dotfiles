@@ -12,6 +12,7 @@ source ~/.dotfiles/install-vim.sh
 source ~/.dotfiles/install-google-chrome.sh
 source ~/.dotfiles/install-prettyping.sh
 source ~/.dotfiles/install-code.sh
+source ~/.dotfiles/install-spotify.sh
 
 mkdir -vp ~/bin
 mkdir -vp ~/.config/git
