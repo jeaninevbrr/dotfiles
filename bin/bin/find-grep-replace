@@ -1,5 +1,10 @@
-if [ "$#" -ne 3 ]; then
-    echo "Usage: find-grep-replace [path] [old_string] [new_string]"
+if [ "$#" -lt 3 ]; then
+    echo "Usage: find-grep-replace [old_string] [new_string] [paths..]"
 else
-    find $1 -type f -exec sed -i "s/$2/$3/g" {} \;
+    OLD=$1
+    shift
+    NEW=$1
+    shift
+    PATHS=$@
+    find $PATHS -type f -exec sed -i "s/$OLD/$NEW/g" {} \;
 fi
