@@ -4,7 +4,7 @@ custom linux config files - managed via gnu stow
 ### Installation Linux
 ```sh
 sudo apt-get -y install stow curl git && \
-git clone https://github.com/YannickdeHoop/dotfiles.git ~/.dotfiles && \
+git clone git@github.com:YannickdeHoop/dotfiles.git ~/.dotfiles && \
 cd ~/.dotfiles && \
 ./install.sh
 ```
@@ -12,7 +12,7 @@ cd ~/.dotfiles && \
 ### Installation OSX
 ```sh
 brew install stow
-git clone https://github.com/YannickdeHoop/dotfiles.git ~/.dotfiles
+git clone git@github.com:YannickdeHoop/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```
