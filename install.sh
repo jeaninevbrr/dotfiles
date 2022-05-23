@@ -13,6 +13,7 @@ source ~/.dotfiles/install-google-chrome.sh
 source ~/.dotfiles/install-prettyping.sh
 source ~/.dotfiles/install-code.sh
 source ~/.dotfiles/install-spotify.sh
+source ~/.dotfiles/install-vokoscreen.sh
 
 mkdir -vp ~/bin
 mkdir -vp ~/.config/git
