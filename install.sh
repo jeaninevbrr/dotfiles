@@ -1,7 +1,9 @@
 #!/bin/bash
 source ~/.dotfiles/install-ag.sh
 source ~/.dotfiles/install-bat.sh
+source ~/.dotfiles/install-colcon-argcomplete.sh
 source ~/.dotfiles/install-docker.sh
+source ~/.dotfiles/install-gimp.sh
 source ~/.dotfiles/install-fzf.sh
 source ~/.dotfiles/install-htop.sh
 source ~/.dotfiles/install-ipython.sh
@@ -13,6 +15,7 @@ source ~/.dotfiles/install-google-chrome.sh
 source ~/.dotfiles/install-prettyping.sh
 source ~/.dotfiles/install-code.sh
 source ~/.dotfiles/install-spotify.sh
+source ~/.dotfiles/install-vlc.sh
 source ~/.dotfiles/install-vokoscreen.sh
 
 mkdir -vp ~/bin
