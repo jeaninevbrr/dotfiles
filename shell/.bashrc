@@ -158,7 +158,12 @@ then
 fi
 
 source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+
+alias zerotier-one='sudo zerotier-one'
+alias zerotier-cli='sudo zerotier-cli'
 
 # set PATH so it includes user's private bin directories
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-source ~/.ros-env/setup.bash
+
+source ~/dev/Lowpad.Robot/install/setup.bash
