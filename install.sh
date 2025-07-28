@@ -2,6 +2,7 @@
 source ~/.dotfiles/install-ag.sh
 source ~/.dotfiles/install-bat.sh
 source ~/.dotfiles/install-brave.sh
+source ~/.dotfiles/install-barracuda-vpn.sh
 source ~/.dotfiles/install-clion.sh
 source ~/.dotfiles/install-code.sh
 source ~/.dotfiles/install-docker.sh
