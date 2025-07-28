@@ -9,12 +9,10 @@ source ~/.dotfiles/install-docker.sh
 source ~/.dotfiles/install-fzf.sh
 source ~/.dotfiles/install-gimp.sh
 source ~/.dotfiles/install-htop.sh
-source ~/.dotfiles/install-intune.sh
 source ~/.dotfiles/install-ipython.sh
 source ~/.dotfiles/install-prettyping.sh
 source ~/.dotfiles/install-pycharm.sh
 source ~/.dotfiles/install-rawtherapee.sh
-source ~/.dotfiles/install-spotify.sh
 source ~/.dotfiles/install-terminator.sh
 source ~/.dotfiles/install-vim.sh
 source ~/.dotfiles/install-vlc.sh
