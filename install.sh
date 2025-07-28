@@ -1,20 +1,23 @@
 #!/bin/bash
-# source ~/.dotfiles/install-ag.sh
-# source ~/.dotfiles/install-bat.sh
-source ~/Repositories/dotfiles/install-docker.sh
-# source Repositories//.dotfiles/install-fzf.sh
-source ~/Repositories/dotfiles/install-htop.sh
-source ~/Repositories/dotfiles/install-ipython.sh
-source ~/Repositories/dotfiles/install-pycharm-community.sh
-source ~/Repositories/dotfiles/install-clion.sh
-source ~/Repositories/dotfiles/install-terminator.sh
-source ~/Repositories/dotfiles/install-vim.sh
-source ~/Repositories/dotfiles/install-google-chrome.sh
-source ~/Repositories/dotfiles/install-prettyping.sh
-source ~/Repositories/dotfiles/install-code.sh
-source ~/Repositories/dotfiles/install-spotify.sh
-source ~/Repositories/dotfiles/install-azurecli.sh
-# source ~/.dotfiles/install-vokoscreen.sh
+source ~/.dotfiles/install-ag.sh
+source ~/.dotfiles/install-bat.sh
+source ~/.dotfiles/install-brave.sh
+source ~/.dotfiles/install-barracuda-vpn.sh
+source ~/.dotfiles/install-clion.sh
+source ~/.dotfiles/install-code.sh
+source ~/.dotfiles/install-docker.sh
+source ~/.dotfiles/install-fzf.sh
+source ~/.dotfiles/install-gimp.sh
+source ~/.dotfiles/install-htop.sh
+source ~/.dotfiles/install-ipython.sh
+source ~/.dotfiles/install-prettyping.sh
+source ~/.dotfiles/install-pycharm.sh
+# source ~/.dotfiles/install-rawtherapee.sh
+source ~/.dotfiles/install-terminator.sh
+source ~/.dotfiles/install-vim.sh
+source ~/.dotfiles/install-vlc.sh
+source ~/.dotfiles/install-vokoscreen.sh
+source ~/.dotfiles/install-webstorm.sh
 
 mkdir -vp ~/bin
 mkdir -vp ~/.config/git
@@ -28,6 +31,7 @@ do
   rm -vrf $dotfile_path
 done
 
+sudo apt-get install stow
 find * -maxdepth 0 -type d -print0 | xargs -0 stow -v
 
 # Permissions
