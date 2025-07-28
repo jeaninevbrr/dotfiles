@@ -31,6 +31,7 @@ do
   rm -vrf $dotfile_path
 done
 
+sudo apt-get install stow
 find * -maxdepth 0 -type d -print0 | xargs -0 stow -v
 
 # Permissions
