@@ -1,5 +1,6 @@
 #!/bin/bash
 source ~/.dotfiles/install-ag.sh
+source ~/.dotfiles/install-azurecli.sh
 source ~/.dotfiles/install-bat.sh
 source ~/.dotfiles/install-brave.sh
 source ~/.dotfiles/install-barracuda-vpn.sh
